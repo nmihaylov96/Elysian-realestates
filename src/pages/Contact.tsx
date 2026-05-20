@@ -1,7 +1,7 @@
 import { motion } from "framer-motion"
 import { useState } from "react"
 import NavBar from "../components/NavBar"
-import Footer from "../components/Footer"
+
 
 function Contact() {
 
@@ -209,7 +209,6 @@ function Contact() {
 
       </section>
 
-      <Footer />
     </motion.div>
   )
 }

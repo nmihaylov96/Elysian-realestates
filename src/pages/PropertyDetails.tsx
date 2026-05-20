@@ -3,7 +3,6 @@ import { useState } from "react"
 import { motion } from "framer-motion"
 
 import NavBar from "../components/NavBar"
-import Footer from "../components/Footer"
 import { properties } from "../data/properties"
 import ImageModal from "../components/ImageModal"
 
@@ -220,7 +219,6 @@ function PropertyDetails() {
         />
       )}
 
-      <Footer />
     </motion.section>
   )
 }

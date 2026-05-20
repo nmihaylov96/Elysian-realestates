@@ -3,7 +3,6 @@ import { Link } from "react-router-dom"
 import { motion, AnimatePresence } from "framer-motion"
 import { Heart, Search, SlidersHorizontal, X } from "lucide-react"
 import NavBar from "../components/NavBar"
-import Footer from "../components/Footer"
 import { properties } from "../data/properties"
 import { getFavorites, toggleFavorite } from "../utils/favorites"
 
@@ -280,7 +279,6 @@ function MyProperties() {
         </AnimatePresence>
       </div>
 
-      <Footer />
     </motion.section>
   )
 }

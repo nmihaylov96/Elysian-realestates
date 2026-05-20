@@ -1,7 +1,7 @@
 import { motion } from "framer-motion"
 import { Link } from "react-router-dom"
 import NavBar from "../components/NavBar"
-import Footer from "../components/Footer"
+
 
 const team = [
   {
@@ -173,8 +173,6 @@ function About() {
           ))}
         </div>
       </section>
-
-      <Footer />
     </motion.div>
   )
 }
