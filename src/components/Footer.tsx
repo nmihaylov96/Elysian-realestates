@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
     <footer className="bg-[#1F3A2E] text-[#E8DFD1] px-6 md:px-16 lg:px-24 pt-20 pb-10">
@@ -47,27 +49,27 @@ const Footer = () => {
           <ul className="mt-5 space-y-3 text-sm">
 
             <li>
-              <a href="/about" className="hover:text-white transition">
+              <Link to="/about" className="hover:text-white transition">
                 About
-              </a>
+              </Link>
             </li>
 
             <li>
-              <a href="/properties" className="hover:text-white transition">
+              <Link to="/properties" className="hover:text-white transition">
                 Properties
-              </a>
+              </Link>
             </li>
 
             <li>
-              <a href="/investments" className="hover:text-white transition">
+              <Link to="/investments" className="hover:text-white transition">
                 Investments
-              </a>
+              </Link>
             </li>
 
             <li>
-              <a href="/contact" className="hover:text-white transition">
+              <Link to="/contact" className="hover:text-white transition">
                 Contact
-              </a>
+              </Link>
             </li>
 
           </ul>
@@ -107,17 +109,17 @@ const Footer = () => {
         </p>
 
         <div className="flex gap-6">
-          <a href="/privacy" className="hover:text-white transition">
+          <Link to="/privacy" className="hover:text-white transition">
             Privacy
-          </a>
+          </Link>
 
-          <a href="/terms" className="hover:text-white transition">
+          <Link to="/terms" className="hover:text-white transition">
             Terms
-          </a>
+          </Link>
 
-          <a href="/sitemap" className="hover:text-white transition">
+          <Link to="/sitemap" className="hover:text-white transition">
             Sitemap
-          </a>
+          </Link>
         </div>
       </div>
     </footer>
