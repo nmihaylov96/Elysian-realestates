@@ -1,5 +1,3 @@
-import { Link } from "wouter";
-
 const Footer = () => {
   return (
     <footer className="bg-[#1F3A2E] text-[#E8DFD1] px-6 md:px-16 lg:px-24 pt-20 pb-10">
@@ -49,27 +47,27 @@ const Footer = () => {
           <ul className="mt-5 space-y-3 text-sm">
 
             <li>
-              <Link href="/about" className="hover:text-white transition">
+              <a href="/about" className="hover:text-white transition">
                 About
-              </Link>
+              </a>
             </li>
 
             <li>
-              <Link href="/properties" className="hover:text-white transition">
+              <a href="/properties" className="hover:text-white transition">
                 Properties
-              </Link>
+              </a>
             </li>
 
             <li>
-              <Link href="/investments" className="hover:text-white transition">
+              <a href="/investments" className="hover:text-white transition">
                 Investments
-              </Link>
+              </a>
             </li>
 
             <li>
-              <Link href="/contact" className="hover:text-white transition">
+              <a href="/contact" className="hover:text-white transition">
                 Contact
-              </Link>
+              </a>
             </li>
 
           </ul>
@@ -109,17 +107,17 @@ const Footer = () => {
         </p>
 
         <div className="flex gap-6">
-          <Link href="/privacy" className="hover:text-white transition">
+          <a href="/privacy" className="hover:text-white transition">
             Privacy
-          </Link>
+          </a>
 
-          <Link href="/terms" className="hover:text-white transition">
+          <a href="/terms" className="hover:text-white transition">
             Terms
-          </Link>
+          </a>
 
-          <Link href="/sitemap" className="hover:text-white transition">
+          <a href="/sitemap" className="hover:text-white transition">
             Sitemap
-          </Link>
+          </a>
         </div>
       </div>
     </footer>
