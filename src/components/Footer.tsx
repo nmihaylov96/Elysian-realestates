@@ -46,12 +46,12 @@ const Footer = () => {
 
           <ul className="mt-5 space-y-3 text-sm">
             <li>
-              <a className="hover:text-white transition" href="#">
+              <a className="hover:text-white transition" href="src/pages/About.tsx">
                 About
               </a>
             </li>
             <li>
-              <a className="hover:text-white transition" href="#">
+              <a className="hover:text-white transition" href="src/pages/MyProperties.tsx">
                 Properties
               </a>
             </li>
@@ -61,7 +61,7 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a className="hover:text-white transition" href="#">
+              <a className="hover:text-white transition" href="src/pages/Contact.tsx">
                 Contact
               </a>
             </li>
