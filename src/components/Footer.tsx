@@ -1,74 +1,81 @@
+import { Link } from "wouter";
+
 const Footer = () => {
   return (
     <footer className="bg-[#1F3A2E] text-[#E8DFD1] px-6 md:px-16 lg:px-24 pt-20 pb-10">
       <div className="flex flex-wrap justify-between gap-14 border-b border-[#3d5747] pb-14">
-        {/* Brand */}
+
+        {/* BRAND */}
         <div className="max-w-sm">
-          <h2 className="text-3xl font-serif text-[#F8F5F0]">ELYSIAN</h2>
+          <h2 className="text-3xl font-serif text-[#F8F5F0]">
+            ELYSIAN
+          </h2>
 
           <p className="mt-5 text-sm leading-7 text-[#d7d0c7]">
             Exceptional residences curated for individuals who value elegance,
             privacy and timeless architecture.
           </p>
 
+          {/* SOCIALS */}
           <div className="flex gap-4 mt-6 text-[#C6A87A]">
-            <svg
-              className="w-5 h-5 hover:text-white cursor-pointer transition"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path d="M7.75 2A5.75 5.75 0 002 7.75v8.5A5.75 5.75 0 007.75 22h8.5A5.75 5.75 0 0022 16.25v-8.5A5.75 5.75 0 0016.25 2h-8.5z" />
-            </svg>
 
-            <svg
-              className="w-5 h-5 hover:text-white cursor-pointer transition"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path d="M13.5 9H15V6.5h-1.5c-1.933 0-3.5 1.567-3.5 3.5v1.5H8v3h2.5V21h3v-7.5H16l.5-3h-3z" />
-            </svg>
+            <a href="#" aria-label="Instagram" className="hover:text-white transition">
+              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M7.75 2A5.75 5.75 0 002 7.75v8.5A5.75 5.75 0 007.75 22h8.5A5.75 5.75 0 0022 16.25v-8.5A5.75 5.75 0 0016.25 2h-8.5z" />
+              </svg>
+            </a>
 
-            <svg
-              className="w-5 h-5 hover:text-white cursor-pointer transition"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path d="M22 5.92a8.2 8.2 0 01-2.36.65" />
-            </svg>
+            <a href="#" aria-label="Facebook" className="hover:text-white transition">
+              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M13.5 9H15V6.5h-1.5c-1.933 0-3.5 1.567-3.5 3.5v1.5H8v3h2.5V21h3v-7.5H16l.5-3h-3z" />
+              </svg>
+            </a>
+
+            <a href="#" aria-label="X / Twitter" className="hover:text-white transition">
+              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M22 5.92a8.2 8.2 0 01-2.36.65" />
+              </svg>
+            </a>
+
           </div>
         </div>
 
-        {/* Links */}
+        {/* LINKS */}
         <div>
           <h3 className="text-[#C6A87A] uppercase tracking-[0.2em] text-sm">
             Company
           </h3>
 
           <ul className="mt-5 space-y-3 text-sm">
+
             <li>
-              <a className="hover:text-white transition" href="src/pages/About.tsx">
+              <Link href="/about" className="hover:text-white transition">
                 About
-              </a>
+              </Link>
             </li>
+
             <li>
-              <a className="hover:text-white transition" href="src/pages/MyProperties.tsx">
+              <Link href="/properties" className="hover:text-white transition">
                 Properties
-              </a>
+              </Link>
             </li>
+
             <li>
-              <a className="hover:text-white transition" href="#">
+              <Link href="/investments" className="hover:text-white transition">
                 Investments
-              </a>
+              </Link>
             </li>
+
             <li>
-              <a className="hover:text-white transition" href="src/pages/Contact.tsx">
+              <Link href="/contact" className="hover:text-white transition">
                 Contact
-              </a>
+              </Link>
             </li>
+
           </ul>
         </div>
 
-        {/* Newsletter */}
+        {/* NEWSLETTER */}
         <div className="max-w-sm">
           <h3 className="text-[#C6A87A] uppercase tracking-[0.2em] text-sm">
             Newsletter
@@ -78,34 +85,41 @@ const Footer = () => {
             Receive exclusive listings and luxury market insights.
           </p>
 
-          <div className="flex mt-6">
+          <form className="flex mt-6">
             <input
               type="email"
               placeholder="Your email"
               className="bg-[#2D4A3A] border border-[#3d5747] px-4 py-3 outline-none text-sm w-full"
             />
 
-            <button className="bg-[#C6A87A] text-[#1F3A2E] px-6 hover:bg-[#d8bc93] transition">
+            <button
+              type="submit"
+              className="bg-[#C6A87A] text-[#1F3A2E] px-6 hover:bg-[#d8bc93] transition font-bold"
+            >
               →
             </button>
-          </div>
+          </form>
         </div>
       </div>
 
-      {/* Bottom */}
+      {/* BOTTOM */}
       <div className="flex flex-col md:flex-row justify-between items-center gap-4 pt-8 text-sm text-[#bfb8ae]">
-        <p>© {new Date().getFullYear()} ELYSIAN. All rights reserved.</p>
+        <p>
+          © {new Date().getFullYear()} ELYSIAN. All rights reserved.
+        </p>
 
         <div className="flex gap-6">
-          <a className="hover:text-white transition" href="#">
+          <Link href="/privacy" className="hover:text-white transition">
             Privacy
-          </a>
-          <a className="hover:text-white transition" href="#">
+          </Link>
+
+          <Link href="/terms" className="hover:text-white transition">
             Terms
-          </a>
-          <a className="hover:text-white transition" href="#">
+          </Link>
+
+          <Link href="/sitemap" className="hover:text-white transition">
             Sitemap
-          </a>
+          </Link>
         </div>
       </div>
     </footer>
